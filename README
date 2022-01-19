@@ -1,0 +1,2 @@
+Setup Project
+mvn clean install
