@@ -1,2 +1,18 @@
-Setup Project
+Requirement
+Java 1.8
+Maven
+Chrome Driver
+Project Build
 mvn clean install
+
+JAR Build
+mvn clean compile assembly:single
+
+Then, JAR file can be found in target directory.
+
+Run
+java -jar {jar_file} <category> [count]
+
+Parameter count is optional. If not specified, it will be set as 100.
+
+CSV file will be provided with a name in the following format: Product_<category>_<timeInMillis>.csv
